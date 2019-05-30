@@ -28,21 +28,13 @@ function () {
           case 0:
             db = req.app.locals.database;
             _context.next = 3;
-            return db.collection("decks").remove({});
+            return db.collection("trading").remove({});
 
           case 3:
             result = _context.sent;
-            _context.next = 6;
-            return db.collection("cabins").remove({});
-
-          case 6:
-            _context.next = 8;
-            return db.collection("meeting_points").remove({});
-
-          case 8:
             res.json(result);
 
-          case 9:
+          case 5:
           case "end":
             return _context.stop();
         }

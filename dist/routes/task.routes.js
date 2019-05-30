@@ -94,7 +94,7 @@ function () {
     return _ref2.apply(this, arguments);
   };
 }());
-router.put('/:id',
+router.put('    ',
 /*#__PURE__*/
 function () {
   var _ref3 = _asyncToGenerator(

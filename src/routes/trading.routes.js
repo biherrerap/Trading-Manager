@@ -19,7 +19,7 @@ router.get('/store/:id', async (req, res) => {
     const { id } = req.params;
     const db = await connect();
     try{
-    const result = await db.collection(collection).find({ store_id: ObjectID(id) });
+    const result = await db.collection(collection).find({ store_id: id});
     res.json(result)
     }
     catch (error) {
